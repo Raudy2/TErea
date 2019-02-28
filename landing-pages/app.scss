@@ -1,0 +1,63 @@
+@import "flexboxgrid";
+@import "commons";
+@import "colors";
+
+.btn{
+  @extend .bold;
+  @extend .no-border;
+  @extend .large-padding;
+}
+.bullet-points{
+  @extend .row;
+  li{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+  }
+}
+.card{
+  @extend .white;
+  @extend .large-padding;
+}
+.container-80{
+  width: 80%;
+  margin: 0 auto;
+}
+html,body{
+  margin:0px;
+  font-size: 18px;
+  font-weight: 200;
+}
+header{
+  .init{
+    @extend .pull-right;
+    @extend .relative;
+    top: 2em;
+    padding-right: 10px;
+    }
+    .restart-time{
+      span{
+        @extend .inline-block;
+        vertical-align: top;
+        line-height: 1em;
+        font-size: 99px;
+        span{
+          display: block;
+          @extend .small;
+          @extend .uppercase;
+          @extend .bold;
+          @extend .text-right;
+          padding-right: 10px;
+        }
+      }
+    }
+}
+.move-up{
+  position: relative;
+  top: -50px;
+}
+
+.workshop-background{
+  background: linear-gradient(to bottom,#6d7783 0%,#49505a 100%);
+  padding-bottom: 100px;
+}
